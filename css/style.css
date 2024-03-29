@@ -376,3 +376,107 @@ nav a {
     margin-top: 20px;
     font-size: 16px;
 }
+
+
+/* Extra Stuff here */
+
+@media (max-width: 768px) {
+    /* Adjust padding and margins for smaller screens */
+    body {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .header {
+        padding: 10px 0;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    .footer-sect {
+        margin-bottom: 10px;
+    }
+    .main-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .gallery img {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+        max-width: 90%;
+        /* Decrease container width */
+    }
+    .main-section .container {
+        padding: 5px;
+        /* Decrease padding */
+    }
+    .main-section .event {
+        margin-bottom: 15px;
+    }
+    .main-section .event h2 {
+        font-size: 20px;
+    }
+    .main-section .event ul li {
+        margin-bottom: 10px;
+    }
+    .main-section .event ul li .campus-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .main-section .event ul li span.event-date {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .main-section .award .chairman ul li {
+        margin-bottom: 10px;
+    }
+    .main-section .award .chairman ul li .campus-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .main-section .gallery .row {
+        flex-direction: column;
+    }
+    .main-section .gallery .col-md-4 {
+        margin-bottom: 10px;
+    }
+    .main-section .footer .container .footer-sect {
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about-us div {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about-us div p {
+        text-align: left;
+        /* Align text to the left */
+    }
+    .about-us img {
+        margin-top: 20px;
+        /* Adjust the margin as needed */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery .subhead,
+    .gallery .heading {
+        display: none;
+    }
+}

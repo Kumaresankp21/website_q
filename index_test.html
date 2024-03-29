@@ -1,140 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <style>
-        .main-section {
-            background: #f0f3fa;
-            overflow: hidden;
-            /* Ensure content doesn't overflow horizontally on small screens */
-        }
-        
-        .container {
-            max-width: 1200px;
-            /* Adjust as needed */
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .event {
-            flex-basis: calc(33.33% - 20px);
-            /* Adjust the width of each section for large screens */
-            margin-bottom: 20px;
-        }
-        
-        .event .heading {
-            margin-top: 0;
-        }
-        
-        .event ul {
-            padding-left: 0;
-            list-style: none;
-        }
-        
-        .event li {
-            margin-bottom: 10px;
-        }
-        
-        .event-date {
-            display: block;
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-        /* Media query for mobile devices */
-        
-        @media screen and (max-width: 767px) {
-            .event {
-                flex-basis: 100%;
-                /* Full width for mobile screens */
-            }
-            .event ul {
-                margin-left: 0;
-            }
-            .event-date {
-                font-size: 14px;
-            }
-        }
-        
-        .main-section {
-            width: 100%;
-            float: left;
-            padding: 20px 0px;
-        }
-        
-        .event {
-            width: calc(33.33% - 20px);
-            margin-right: 20px;
-            float: left;
-            background-color: #fff;
-        }
-        
-        .event i {
-            color: red;
-            font-size: 14px;
-        }
-        
-        .event div {
-            padding: 10px;
-        }
-        
-        .event .heading {
-            padding: 10px;
-            color: #fff;
-            background: #0055a4;
-            text-align: center;
-            font-size: 22px;
-            font-weight: 400;
-            margin-bottom: 10px;
-        }
-        
-        .event ul li {
-            margin-bottom: 20px;
-            width: 100%;
-            float: left;
-            list-style: none;
-        }
-        
-        .event-date {
-            background: red;
-            float: left;
-            text-align: center;
-            font-size: 14px;
-            color: #fff;
-            padding: 8px 12px;
-            margin-right: 10px;
-        }
-        /*******CAMPUS NEWS SECTION***********/
-        
-        .campus-news span {
-            width: 80px;
-            float: left;
-        }
-        
-        .campus-news h2 {
-            font-weight: 600;
-            font-size: 16px;
-        }
-        
-        .campus-news h6 {
-            font-weight: 500;
-            font-size: 13px;
-            color: red;
-        }
-        
-        .campus-news p {
-            font-size: 14px;
-        }
-    </style>
+    <title>Queens College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!---TOP-HEADER STARTS TOP-HEADER STARTS--->
+    <div class="header bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <b> NEWS : </b>
+                </div>
+                <div class="col">
+                    <marquee> My college: How To Lorem Ipsum is simply dummy text of the printing and typesetting industry. </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!---LOGO SECTION ----->
+        <img src="images/Queens Logo New.png" class="logo mt-3">
+        <!----MENU SECTION----->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notice Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-----SLIDER SECTION----->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/slide_2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./images/NSS Day.jpg" alt="Second slide">
+            </div>
+            <!-- <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Third slide">
+          </div> -->
+        </div>
+    </div>
+    <style>
+        /* Adjust the width and height of the carousel */
+        
+        #carouselExampleSlidesOnly {
+            width: 90%;
+            /* Adjust the width as needed */
+            margin: 0 auto;
+            /* Center the carousel */
+        }
+        /* Adjust the size of the images */
+        
+        .carousel-inner .carousel-item img {
+            max-width: 100%;
+            /* Ensure images don't exceed the width of the carousel */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+    </style>
+
+    <!----END SLIDER SECTION----->
+
     <div class="main-section" style="background:#f0f3fa">
         <div class="container">
             <!----CAMPUS NEWS SECTION----->
@@ -181,42 +135,18 @@
                     <ul>
                         <li>
                             <span class="campus-img">
-          <img src="images/campus-1.png">
-        </span>
+              <img src="images/campus-1.png">
+            </span>
                             <h2>There are many variations.</h2>
                             <h6>Mar.04.2024</h6>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
                         </li>
-                        <!-- <li>
-                            <span class="event-img">
-          <img src="images/campus-2.png">
-        </span>
-                            <h2>There are many variations.</h2>
-                            <h6>Sep.04.2012</h6>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                        </li>
-                        <li>
-                            <span class="event-img">
-          <img src="images/campus-3.png">
-        </span>
-                            <h2>There are many variations.</h2>
-                            <h6>Sep.04.2012</h6>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                        </li>
-                        <li>
-                            <span class="event-img">
-          <img src="images/campus-4.png">
-        </span>
-                            <h2>There are many variations.</h2>
-                            <h6>Sep.04.2012</h6>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                        </li> -->
                     </ul>
                 </div>
             </div>
             <!------EVENT SECTION------>
             <div class="event">
-                <h2 class="heading">College Event Calender</h2>
+                <h2 class="heading">College Event Calendar</h2>
                 <div>
                     <ul>
                         <li>
@@ -239,6 +169,131 @@
             </div>
         </div>
     </div>
+    <!-----ABOUT US SECTION------>
+    <div class="main-section">
+        <div class="container about-us">
+            <div>
+                <h4 class="subhead">Our Institute</h4>
+                <h2 class="heading">About My College</h2>
+                <p>Queens College of Arts and Science for Women was established in the year 2018 by Raj Educational Trust (RET) Chennai. The college is situated on the Thanjavur – Pudukkottai Highways, 13 kms from Thanjavur New Busstand, on a sprawling area
+                    of 6.42 acres. The sole aim of the college is to provide quality education to the women aspirants of this region and to empower them as Queens of Knowledge and Academic Qualification.</p>
+                <a href="#">Read More</a>
+            </div>
+            <img src="images/about.png" class="img-fluid">
+        </div>
+    </div>
+    <div class="main-section award" style="background:#f0f3fa">
+        <div class="container">
+            <!-----College INFO SECTION----->
+            <div class="event">
+                <h2 class="heading">Our Chairman</h2>
+                <div class="chairman">
+                    <ul>
+                        <li>
+                            <span class="campus-img">
+              <img src="images/owner-1.png">
+            </span>
+                            <h2>Dr. Jay sharma</h2>
+                            <h4>Chairman, My College</h4>
+                            <h5>2010-2023</h5>
+                        </li>
+                        <li>
+                            <span class="campus-img">
+              <img src="images/owner-2.png">
+            </span>
+                            <h2>Dr. Jay sharma</h2>
+                            <h4>Principal, My College</h4>
+                            <h5>2020-2023</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-----College AWARD SECTION----->
+            <div class="event">
+                <h2 class="heading">Our College Awards</h2>
+                <div>
+                    <img src="images/award.jpg" class="img-fluid">
+                </div>
+            </div>
+            <!-----College CERTIFICATE SECTION----->
+            <div class="event">
+                <h2 class="heading">My College Certificate</h2>
+                <div>
+                    <img src="images/certificate.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----GALLERY SECTION ------>
+    <div class="main-section gallery bg-light">
+        <div class="container">
+            <h4 class="subhead">My Gallery</h4>
+            <h2 class="heading">Our College Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="images/268270852_200426288958163_2415264607534892437_n.jpg" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/273375357_233067715694020_8475082521963737254_n.jpg" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="images/Carona Camp.jpg" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------PLACEMENT SECTION ------->
+    <div class="main-section">
+        <div class="container">
+            <h4 class="subhead">Top Placement</h4>
+            <h2 class="heading">Our Partner Company</h2>
+            <marquee class="placement" direction="left" scrollamount="10">
+                <img src="images/placement.jpg">
+            </marquee>
+        </div>
+    </div>
+    <!---FOOTER SECTION--->
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-sect">
+                <img class="footer-logo" src="images/Queens Logo New.png">
+            </div>
+            <div class="footer-sect">
+                <address> Punalkulam,</br>
+                    Near Thanjavur,</br>
+                    Gandarvakottai -Taluk,</br>
+                    Pudukkottai -District.</br>
+                    Tamilnadu-613303</address>
+            </div>
+            <div class="footer-sect">
+                <span class="bi bi-telephone"></span> 91 9442441022
+            </div>
+            <div class="footer-sect">
+                <span class="bi bi-envelope"></span> PrincipalofficeQueeens2018@gmail.com
+            </div>
+            <div class="footer-sect">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-linkedin"></span>
+            </div>
+            <div class="footer-sect">
+                <a href="#"> Home</a>
+                <a href="#"> About us</a>
+                <a href="#"> Tutorial</a>
+                <a href="#"> Event</a>
+                <a href="#"> Gallery</a>
+                <a href="#"> Press Release</a>
+                <a href="#"> Courses</a>
+                <a href="#"> Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
