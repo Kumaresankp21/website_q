@@ -10,7 +10,7 @@ body {
     sans-serif,
     arial;
     font-size: 16px;
-    color: #242424;
+    /* color: #242424; */
 }
 
 .container {
@@ -231,6 +231,8 @@ nav a {
     font-weight: 500;
 }
 
+
+/* 
 .about-us div {
     width: 45%;
     float: left;
@@ -254,7 +256,7 @@ nav a {
 .about-us img {
     width: 40%;
     float: left;
-}
+} */
 
 
 /****************AWARD SECTION****************/
@@ -352,6 +354,8 @@ nav a {
 
 /****************FOOTER SECTION****************/
 
+
+/* 
 .footer {
     background-color: #f0f3fa;
     padding: 40px 0px;
@@ -376,7 +380,7 @@ nav a {
     text-align: center;
     margin-top: 20px;
     font-size: 16px;
-}
+} */
 
 
 /* Extra Stuff here */
@@ -384,7 +388,7 @@ nav a {
 @media (max-width: 768px) {
     /* Adjust padding and margins for smaller screens */
     body {
-        padding-top: 60px;
+        /* padding-top: 60px; */
         padding-bottom: 60px;
     }
     .header {
