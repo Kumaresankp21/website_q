@@ -21,6 +21,23 @@ body {
 
 /****************HEADER SECTION****************/
 
+.header {
+    background: #0055a4;
+    padding: 6px;
+}
+
+.header b {
+    background: #fff;
+    color: red;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.header marquee {
+    font-size: 20px;
+    color: #ffffff;
+    width: 80%;
+}
 
 
 /**********LOGO SECTION**********/
@@ -49,6 +66,21 @@ nav a {
 
 /*****SLIDER SECTION*****/
 
+.slider {
+    width: 100%;
+    /* Set a width for the slider container */
+    margin: 0 auto;
+    /* Center the slider horizontally */
+    overflow: hidden;
+    /* This is needed for some of the transition effects */
+}
+
+.slider img {
+    width: 100%;
+    /* Set width to 100% to fill the container */
+    display: block;
+    /* Needed for proper image display */
+}
 
 
 /****************EVENT SECTION*************/
@@ -62,8 +94,8 @@ nav a {
 .container {
     max-width: 1200px;
     /* Adjust as needed */
-    /* margin: 0 auto; */
-    /* padding: 20px; */
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
