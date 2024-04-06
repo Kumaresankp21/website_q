@@ -3,12 +3,25 @@
 
 <head>
     <title>Queens College</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <style>
+        /* Custom styles for full-width image */
+        .full-width-image {
+            width: 100%;
+            /* height: 100vh; 100% of viewport height */
+            object-fit: cover; /* Scale the image while maintaining aspect ratio */
+        }
+    </style>
+    <div class="container-fluid p-0">
+        <!-- Sample full-width image -->
+        <img src="images/top12.png" class="full-width-image" alt="Sample Image">
+    </div>
     <!-- <table>
         <tr style="background-color: white ">
             <td class="header-images">
@@ -76,7 +89,7 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Home
+            About us
           </a>
           <div class="dropdown-menu" aria-labelledby="homeDropdown">
             <a class="dropdown-item" href="#">Home 1</a>
@@ -86,17 +99,20 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About Us
+            Department
           </a>
           <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <a class="dropdown-item" href="#">About Us 1</a>
-            <a class="dropdown-item" href="#">About Us 2</a>
-            <a class="dropdown-item" href="#">About Us 3</a>
+            <a class="dropdown-item" href="#">ECE</a>
+            <a class="dropdown-item" href="#">CSE</a>
+            <a class="dropdown-item" href="#">EEE</a>
+            <a class="dropdown-item" href="#">AI & DS</a>
+            <a class="dropdown-item" href="#">MECH</a>
+            <a class="dropdown-item" href="#">CIVIL</a>
           </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Academics
+            Facilities
           </a>
           <div class="dropdown-menu" aria-labelledby="academicsDropdown">
             <a class="dropdown-item" href="#">Programs</a>
@@ -106,7 +122,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Admissions
+            Events
           </a>
           <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
             <a class="dropdown-item" href="#">Application Process</a>
@@ -116,7 +132,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="studentLifeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Student Life
+            Clubs & Activities
           </a>
           <div class="dropdown-menu" aria-labelledby="studentLifeDropdown">
             <a class="dropdown-item" href="#">Clubs</a>
@@ -126,7 +142,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Events
+            Alumni
           </a>
           <div class="dropdown-menu" aria-labelledby="eventsDropdown">
             <a class="dropdown-item" href="#">Upcoming Events</a>
@@ -135,7 +151,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Contact
+            GRC
           </a>
           <div class="dropdown-menu" aria-labelledby="contactDropdown">
             <a class="dropdown-item" href="#">Contact Us</a>
@@ -144,7 +160,7 @@
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Contact
+              IQAC
             </a>
             <div class="dropdown-menu" aria-labelledby="contactDropdown">
               <a class="dropdown-item" href="#">Contact Us</a>
@@ -153,7 +169,16 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Contact
+              IIC
+            </a>
+            <div class="dropdown-menu" aria-labelledby="contactDropdown">
+              <a class="dropdown-item" href="#">Contact Us</a>
+              <a class="dropdown-item" href="#">Location</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              E-Learning
             </a>
             <div class="dropdown-menu" aria-labelledby="contactDropdown">
               <a class="dropdown-item" href="#">Contact Us</a>
@@ -443,38 +468,28 @@ body{
         </div>
     </div> -->
     <!------GALLERY SECTION ------>
+ 
     <div class="main-section gallery bg-light">
         <div class="container">
             <h4 class="subhead">My Gallery</h4>
             <h2 class="heading">Our College Gallery</h2>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <img src="images/268270852_200426288958163_2415264607534892437_n.jpg" class="img-fluid rounded">
+            <div class="main-section">
+                <div class="container">
+                    <marquee class="placement" direction="left" scrollamount="8">
+                        <img src="images/268270852_200426288958163_2415264607534892437_n.jpg" style="max-width: 300px;">
+                        <img src="images/273375357_233067715694020_8475082521963737254_n.jpg" style="max-width: 300px;">
+                        <img src="images/4.png" style="max-width: 300px;">
+                        <!-- <img src="images/9.png" style="max-width: 150px;"> -->
+                        <!-- <img src="images/5.png" style="max-width: 150px;"> -->
+                        <!-- <img src="images/6.png" style="max-width: 150px;"> -->
+                    </marquee>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <img src="images/273375357_233067715694020_8475082521963737254_n.jpg" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <img src="images/Carona Camp.jpg" class="img-fluid rounded">
-                </div>
-                <!-- <div class="col-md-4 mb-3">
-                    <img src="images/loc.JPG" class="img-fluid rounded"> -->
-                <!-- </div>
-                <div class="col-md-4 mb-3">
-                    <img src="images/slide_2.jpg" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <img src="images/Sports.jpg" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <img src="images/Womens Day .jpg" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <img src="images/Carona Camp.jpg" class="img-fluid rounded">
-                </div> -->
             </div>
         </div>
     </div>
+    
+    
+    
 
     <!-------PLACEMENT SECTION ------->
     <div class="main-section">
