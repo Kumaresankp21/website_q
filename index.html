@@ -30,7 +30,7 @@
         </tr>
     </table> -->
     <!-- style for above -->
-    <style>
+    <!-- <style>
         /* Your existing styles */
         
         .header-images img {
@@ -50,7 +50,7 @@
                 /* Hide images with this class on mobile */
             }
         }
-    </style>
+    </style> -->
 
     <!---TOP-HEADER STARTS TOP-HEADER STARTS--->
     <div class="bg-light text-white">
@@ -67,35 +67,99 @@
     </div>
    
   <header>
-    
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Queens</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Home
+          </a>
+          <div class="dropdown-menu" aria-labelledby="homeDropdown">
+            <a class="dropdown-item" href="#">Home 1</a>
+            <a class="dropdown-item" href="#">Home 2</a>
+            <a class="dropdown-item" href="#">Home 3</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="#">About Us 1</a>
+            <a class="dropdown-item" href="#">About Us 2</a>
+            <a class="dropdown-item" href="#">About Us 3</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Academics</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Academics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+            <a class="dropdown-item" href="#">Programs</a>
+            <a class="dropdown-item" href="#">Faculty</a>
+            <a class="dropdown-item" href="#">Research</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Admissions</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admissions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+            <a class="dropdown-item" href="#">Application Process</a>
+            <a class="dropdown-item" href="#">Requirements</a>
+            <a class="dropdown-item" href="#">Financial Aid</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Student Life</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="studentLifeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Student Life
+          </a>
+          <div class="dropdown-menu" aria-labelledby="studentLifeDropdown">
+            <a class="dropdown-item" href="#">Clubs</a>
+            <a class="dropdown-item" href="#">Events</a>
+            <a class="dropdown-item" href="#">Services</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+            <a class="dropdown-item" href="#">Upcoming Events</a>
+            <a class="dropdown-item" href="#">Past Events</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="contactDropdown">
+            <a class="dropdown-item" href="#">Contact Us</a>
+            <a class="dropdown-item" href="#">Location</a>
+          </div>
         </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Contact
+            </a>
+            <div class="dropdown-menu" aria-labelledby="contactDropdown">
+              <a class="dropdown-item" href="#">Contact Us</a>
+              <a class="dropdown-item" href="#">Location</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Contact
+            </a>
+            <div class="dropdown-menu" aria-labelledby="contactDropdown">
+              <a class="dropdown-item" href="#">Contact Us</a>
+              <a class="dropdown-item" href="#">Location</a>
+            </div>
+          </li>
       </ul>
     </div>
   </nav>
@@ -130,6 +194,11 @@
 
   </header>
   <style>
+      @media (max-width: 768px) {
+    .carousel-item {
+      height: 500px; /* Set height to auto for smaller screens */
+    }
+  }
     .my-nav{
 position: absolute;
 z-index: 10;
@@ -270,9 +339,9 @@ body{
             <img src="images/about.png">
         </div>
     </div>
-    <div class="main-section award" style="background:#f0f3fa">
+    <!-- <div class="main-section award" style="background:#f0f3fa">
         <div class="container">
-            <!-----College INFO SECTION----->
+            ---College INFO SECTION---
             <div class="event">
                 <h2 class="heading">Our Chairman</h2>
                 <div class="chairman">
@@ -296,14 +365,14 @@ body{
                     </ul>
                 </div>
             </div>
-            <!-----College AWARD SECTION----->
+            ---College AWARD SECTION--
             <div class="event">
                 <h2 class="heading">Our College Awards</h2>
                 <div>
                     <img src="images/award.jpg">
                 </div>
             </div>
-            <!-----College CERTIFICATE SECTION----->
+        -College CERTIFICATE SECTION-
             <div class="event">
                 <h2 class="heading">My College Certificate</h2>
                 <div>
@@ -311,7 +380,7 @@ body{
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-----TESTIMONIAL SECTION------>
     <!-- <div class="main-section ">
         <div class="container">
