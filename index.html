@@ -15,14 +15,25 @@
         
         .full-width-image {
             width: 100%;
+            height: 100px;
+            /* height: 80%; */
             /* height: 100vh; 100% of viewport height */
-            object-fit: cover;
+            /* object-fit: cover; */
             /* Scale the image while maintaining aspect ratio */
+        }
+        
+        @media (max-width: 768px) {
+            .full-width-image {
+                /* object-fit: cover; */
+                /* height: 100px; */
+                width: 100%;
+                /* Adjust as needed */
+            }
         }
     </style>
     <div class="container-fluid p-0">
         <!-- Sample full-width image -->
-        <img src="images/top12.png" class="full-width-image" alt="Sample Image">
+        <img src="images/queens_top.png" class="full-width-image" alt="Sample Image">
     </div>
     <!-- <table>
         <tr style="background-color: white ">
@@ -68,7 +79,7 @@
     </style> -->
 
     <!---TOP-HEADER STARTS TOP-HEADER STARTS--->
-    <div class="bg-light text-white">
+    <div class="bg-pink text-white">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center">
                 <div class="col-auto">
@@ -190,7 +201,16 @@
                 </ul>
             </div>
         </nav>
-
+        <style>
+            .navbar-dark.bg-dark {
+                background-color: rgb(250, 7, 194) !important;
+            }
+            
+            .navbar-dark .navbar-nav .nav-link {
+                color: black !important;
+                font-weight: bold;
+            }
+        </style>
         <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
