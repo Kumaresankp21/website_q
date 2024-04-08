@@ -168,7 +168,7 @@ nav a {
 .event .heading {
     padding: 10px;
     color: #fff;
-    background: #0055a4;
+    background: rgb(250, 7, 194);
     text-align: center;
     font-size: 22px;
     font-weight: 400;
@@ -222,7 +222,7 @@ nav a {
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 30px;
-    color: #0055a4;
+    color: rgb(250, 7, 194)
 }
 
 .subhead {
